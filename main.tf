@@ -17,7 +17,7 @@ module "elb" {
 }
 
 module "asg" {
-  source = "github.com/smithlabs/terraform-asg-rolling-deploy?ref=v1.0.0"
+  source = "github.com/smithlabs/terraform-aws-asg-rolling-deploy?ref=v1.0.0"
 
   ami                = "ami-02354e95b39ca8dec" # Amazon Linux
   instance_type      = "t2.micro"
