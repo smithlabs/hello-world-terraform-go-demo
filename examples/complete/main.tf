@@ -10,14 +10,14 @@ provider "aws" {
 }
 
 module "elb" {
-  source = "github.com/smithlabs/terraform-aws-elb?ref=v0.0.2"
+  source = "github.com/smithlabs/terraform-aws-elb?ref=v1.0.0"
 
   elb_name           = var.name
   subnet_ids         = data.aws_subnet_ids.default.ids
 }
 
 module "asg" {
-  source = "github.com/smithlabs/terraform-asg-rolling-deploy?ref=v0.0.5"
+  source = "github.com/smithlabs/terraform-aws-asg-rolling-deploy?ref=v1.0.0"
 
   ami                = "ami-02354e95b39ca8dec" # Amazon Linux
   instance_type      = "t2.micro"
