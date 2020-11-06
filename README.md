@@ -4,7 +4,7 @@
 
 Image auto-generated using the [dancing gopher web server](https://gist.github.com/Deleplace/240675c1a70e7df4cd5b04aa204aeeba).
 
-Credit: [Valentin Deleplace](https://gist.github.com/Deleplace/240675c1a70e7df4cd5b04aa204aeeba)
+Credit: [Valentin Deleplace](https://github.com/Deleplace)
 
 ## 🛰️ Technologies
 
