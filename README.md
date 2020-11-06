@@ -6,7 +6,7 @@
 
 ![Amazon AWS](https://img.shields.io/badge/Amazon%20AWS-232F3E?style=flat-square&logo=amazon-aws)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![Go](https://img.shields.io/badge/-Go-white?style=flat-square&logo=Go)
+![Go](https://img.shields.io/badge/-Go-3E3E3E?style=flat-square&logo=Go)
 ![Terraform](https://img.shields.io/badge/-Terraform-623ce4?style=flat-square&logo=terraform)
 
 This repo contains everything you need to deploy the [pre-compiled](https://github.com/smithlabs/go-example-servers#example-hello-world-http-server) "Hello, World!" [Go](https://golang.org/) binary as a load balanced web application to [AWS](https://aws.amazon.com/) using [Terraform](https://www.terraform.io/).
