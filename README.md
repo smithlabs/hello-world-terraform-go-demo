@@ -1,17 +1,21 @@
-# Terraform + AWS + Go = "Hello, World!"
+# Deploying the Hello World Go web server to AWS using Terraform
 
-![Image of Gopher Interviwing](https://github.com/smithlabs/github-assets/blob/main/web/gopher-hello-world.png?raw=true)
+![Image of Gopher Interviwing](https://github.com/smithlabs/github-assets/blob/main/web/dancing-gopher-hello-world.gif?raw=true)
 
-## 🧩 Technologies
+Image auto-generated using the [dancing gopher web server](https://gist.github.com/Deleplace/240675c1a70e7df4cd5b04aa204aeeba).
+
+Credit: [Valentin Deleplace](https://gist.github.com/Deleplace/240675c1a70e7df4cd5b04aa204aeeba)
+
+## 🛰️ Technologies
 
 ![Amazon AWS](https://img.shields.io/badge/Amazon%20AWS-232F3E?style=flat-square&logo=amazon-aws)
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![Go](https://img.shields.io/badge/-Go-3E3E3E?style=flat-square&logo=Go)
 ![Terraform](https://img.shields.io/badge/-Terraform-623ce4?style=flat-square&logo=terraform)
+![Go](https://img.shields.io/badge/-Go-3E3E3E?style=flat-square&logo=Go)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 
 This repo contains everything you need to deploy the [pre-compiled](https://github.com/smithlabs/go-example-servers#example-hello-world-http-server) "Hello, World!" [Go](https://golang.org/) binary as a load balanced web application to [AWS](https://aws.amazon.com/) using [Terraform](https://www.terraform.io/).
 
-## 🗺️ Overview
+## 🔭 Overview
 
 This project will deploy the following [AWS](https://aws.amazon.com/) infrastructure resources.
 
@@ -21,7 +25,7 @@ This project will deploy the following [AWS](https://aws.amazon.com/) infrastruc
 - [Security Groups for the Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-security-groups.html)
 - [Security Groups for the EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
 
-## 🛠️ Requirements
+## 🔬 Requirements
 
 - Terraform (>= 0.13) - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - AWS (~> 2.0) - [Install aws-cli version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
@@ -72,7 +76,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests and examples as appropriate.
 
-## 🌟 Show your support
+## 🏆 Show your support
 
 Please ⭐️ this repository if this project helped you!
 
