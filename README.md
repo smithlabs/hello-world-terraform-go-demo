@@ -1,6 +1,6 @@
 # Terraform + AWS + Go = "Hello, World!"
 
-![Image of Gopher Interviwing](https://blog.pepo-le.com/wp-content/uploads/2018/08/gopher-hello.png)
+![Image of Gopher Interviwing](https://github.com/smithlabs/github-assets/blob/main/web/gopher-hello-world.png?raw=true)
 
 ## 🧩 Technologies
 
@@ -10,6 +10,8 @@
 ![Terraform](https://img.shields.io/badge/-Terraform-623ce4?style=flat-square&logo=terraform)
 
 This repo contains everything you need to deploy the [pre-compiled](https://github.com/smithlabs/go-example-servers#example-hello-world-http-server) "Hello, World!" [Go](https://golang.org/) binary as a load balanced web application to [AWS](https://aws.amazon.com/) using [Terraform](https://www.terraform.io/).
+
+## 🗺️ Overview
 
 This project will deploy the following [AWS](https://aws.amazon.com/) infrastructure resources.
 
@@ -60,15 +62,23 @@ terraform destroy
 
 **[⬆ back to top](#-technologies)**
 
-## 📚 Usage
+## 🧪 Usage
 
 More instructions
 
-## 🤝Contributing
+## 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests and examples as appropriate.
+
+## Show your support
+
+Please ⭐️ this repository if this project helped you!
+
+## Resources
+
+- [EmojiTerra](https://emojiterra.com/) - Copy and paste emojis into your README
 
 ## 📝License
 
