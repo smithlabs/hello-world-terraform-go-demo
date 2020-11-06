@@ -72,7 +72,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests and examples as appropriate.
 
-## Show your support
+## 🌟 Show your support
 
 Please ⭐️ this repository if this project helped you!
 
