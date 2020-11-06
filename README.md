@@ -1,4 +1,4 @@
-# Deploying the Hello World Go web server to AWS using Terraform
+# Deploying a "Hello, World!" Go web server to AWS using Terraform
 
 ![Image of Gopher Interviwing](https://github.com/smithlabs/github-assets/blob/main/web/dancing-gopher-hello-world.gif?raw=true)
 
@@ -30,7 +30,7 @@ This project will deploy the following [AWS](https://aws.amazon.com/) infrastruc
 - Terraform (>= 0.13) - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - AWS (~> 2.0) - [Install aws-cli version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 
-## 🐇 Quick start
+## 🐇 Quickstart
 
 **Please note that this example will deploy real resources into your AWS account. We have made every effort to ensure
 all the resources qualify for the [AWS Free Tier](https://aws.amazon.com/free/), but we are not responsible for any
@@ -64,7 +64,7 @@ Clean up when you're done:
 terraform destroy
 ```
 
-**[⬆ back to top](#-technologies)**
+**[⬆ back to top](#%EF%B8%8F-technologies)**
 
 ## 🧪 Usage
 
