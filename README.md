@@ -17,13 +17,24 @@ This repo contains everything you need to deploy the [pre-compiled](https://gith
 
 ## 🔭 Overview
 
-This project will deploy the following [AWS](https://aws.amazon.com/) infrastructure resources.
+This project will deploy the following [AWS](https://aws.amazon.com/) resources.
 
 - [Elastic Load Balancer](https://aws.amazon.com/elasticloadbalancing/) (Also known as the [Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/introduction.html))
 - [Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html)
 - 2 x [EC2 Instances](https://aws.amazon.com/ec2/) of [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/)
 - [Security Groups for the Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-security-groups.html)
 - [Security Groups for the EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
+
+## ⚙️ Modules
+
+`main.tf` utilizes my two custom Terraform modules. These modules should be pinned to `v1.0.0`.
+
+| Name                                                                                                        | Version |
+| ----------------------------------------------------------------------------------------------------------- | ------- |
+| [smithlabs/terraform-aws-asg-rolling-deploy](https://github.com/smithlabs/terraform-aws-asg-rolling-deploy) | v1.0.0  |
+| [smithlabs/terraform-aws-elb](https://github.com/smithlabs/terraform-aws-elb)                               | v1.0.0  |
+
+[Here](https://github.com/smithlabs/hello-world-terraform-go-demo/blob/main/main.tf#L12-L31) is the where these modules are used in `main.tf`.
 
 ## 🔬 Requirements
 
