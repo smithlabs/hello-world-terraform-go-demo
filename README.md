@@ -69,6 +69,8 @@ When the `apply` command completes, it will output the DNS name of the load bala
 curl http://<alb_dns_name>/
 ```
 
+![GIF - Accessing the Go web app via AWS ELB DNS](https://github.com/smithlabs/github-assets/blob/main/gif/hello-world-terraform-go-demo-curl-output.gif?raw=true)
+
 Clean up when you're done:
 
 ```
