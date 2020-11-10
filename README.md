@@ -34,7 +34,7 @@ This project will deploy the following [AWS](https://aws.amazon.com/) resources.
 | [smithlabs/terraform-aws-asg-rolling-deploy](https://github.com/smithlabs/terraform-aws-asg-rolling-deploy) | v1.0.0  |
 | [smithlabs/terraform-aws-elb](https://github.com/smithlabs/terraform-aws-elb)                               | v1.0.0  |
 
-[Here](https://github.com/smithlabs/hello-world-terraform-go-demo/blob/main/main.tf#L12-L31) is the where these modules are used in `main.tf`.
+[Here](https://github.com/smithlabs/hello-world-terraform-go-demo/blob/main/main.tf#L12-L31) is where these modules are used in `main.tf`.
 
 ## 🔬 Requirements
 
