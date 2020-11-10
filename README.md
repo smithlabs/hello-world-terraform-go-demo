@@ -66,7 +66,7 @@ terraform apply
 When the `apply` command completes, it will output the DNS name of the load balancer. To test the load balancer:
 
 ```
-curl http://<alb_dns_name>/
+curl http://<elb_dns_name>/
 ```
 
 ![GIF - Accessing the Go web app via AWS ELB DNS](https://github.com/smithlabs/github-assets/blob/main/gif/hello-world-terraform-go-demo-curl-output.gif?raw=true)
