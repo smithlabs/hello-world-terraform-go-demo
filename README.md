@@ -81,6 +81,16 @@ terraform destroy
 
 More instructions
 
+## 📥Inputs
+
+Inputs section
+
+## 📤 Outputs
+
+| Name         | Description                                |
+| ------------ | ------------------------------------------ |
+| elb_dns_name | The DNS name for the Elastic Load Balancer |
+
 ## 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
