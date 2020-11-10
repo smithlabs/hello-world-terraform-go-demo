@@ -27,7 +27,7 @@ func TestHelloWorldAppExample(t *testing.T)  {
 	url := fmt.Sprintf("http://%s", elbDnsName)
 
 	expectedStatus := 200
-	expectedBody := "Hello world!"
+	expectedBody := "Hello, world!"
 
 	maxRetries := 10
 	timeBetweenRetries := 10 * time.Second
