@@ -38,8 +38,10 @@ This project will deploy the following [AWS](https://aws.amazon.com/) resources.
 
 ## 🔬 Requirements
 
-- Terraform (>= 0.13) - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
-- AWS (~> 2.0) - [Install aws-cli version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+| Name      | Version   | Install                                                                                   |
+| --------- | --------- | ----------------------------------------------------------------------------------------- |
+| terraform | >= 0.13.0 | [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)          |
+| aws       | >= 2.35   | [Install aws-cli v2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) |
 
 ## 🐇 Quickstart
 
