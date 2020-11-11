@@ -87,11 +87,11 @@ More instructions
 
 ## 📥Inputs
 
-| Name        | Description                                                              | Type     | Default     | Required |
-| ----------- | ------------------------------------------------------------------------ | -------- | ----------- | :------: |
-| name        | The name to prepend to the auto scaling group and ELB resources.         | `string` | hello-world |    no    |
-| environment | The environment name to add to the auto scaling group and ELB resources. | `string` | test        |    no    |
-| server_port | The port the server will use for HTTP requests.                          | `number` | `8080`      |    no    |
+| Name        | Description                                                              | Type     | Default       | Required |
+| ----------- | ------------------------------------------------------------------------ | -------- | ------------- | :------: |
+| name        | The name to prepend to the auto scaling group and ELB resources.         | `string` | `hello-world` |    no    |
+| environment | The environment name to add to the auto scaling group and ELB resources. | `string` | `test`        |    no    |
+| server_port | The port the server will use for HTTP requests.                          | `number` | `8080`        |    no    |
 
 ## 📤 Outputs
 
