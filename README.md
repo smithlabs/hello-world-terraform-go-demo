@@ -111,4 +111,4 @@ Please ⭐️ this repository if this project helped you!
 
 ## 📝License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/smithlabs/hello-world-terraform-go-demo/blob/main/LICENSE)
