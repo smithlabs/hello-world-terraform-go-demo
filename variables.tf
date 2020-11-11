@@ -4,13 +4,13 @@
 # ---------------------------------------------------------------------------------------------------------------------
 
 variable "name" {
-  description = "The name of the ASG and all its resources"
+  description = "The name to prepend to the auto scaling group and ELB resources"
   type        = string
   default     = "hello-world"
 }
 
 variable "environment" {
-  description = "The environment name of the ASG and all its resources"
+  description = "The environment name to add to the auto scaling group and ELB resources"
   type        = string
   default     = "test"
 }
