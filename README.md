@@ -27,7 +27,7 @@ This project will deploy the following [AWS](https://aws.amazon.com/) resources.
 
 💡 Below are links to the examples and tests included in this repo.
 
-- [Example](https://github.com/smithlabs/hello-world-terraform-go-demo/tree/main/examples/complete) - A complete example of the "Hello, World!" deploy.
+- [Complete Example](https://github.com/smithlabs/hello-world-terraform-go-demo/tree/main/examples/complete) - A complete example of the "Hello, World!" deploy.
 - [Tests](https://github.com/smithlabs/hello-world-terraform-go-demo/tree/main/test) - Automatically deploy the example above, see if the ELB returns "Hello, World!", and then destroy the deployed resources.
 
 ## ⚙️ Modules
