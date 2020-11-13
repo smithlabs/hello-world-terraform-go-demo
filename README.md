@@ -25,6 +25,11 @@ This project will deploy the following [AWS](https://aws.amazon.com/) resources.
 - [Security Groups for the Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-security-groups.html)
 - [Security Groups for the EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
 
+💡 Below are links to the examples and tests included in this repo.
+
+- [Example](https://github.com/smithlabs/hello-world-terraform-go-demo/tree/main/examples/complete) - A complete example of the "Hello, World!" deploy.
+- [Tests](https://github.com/smithlabs/hello-world-terraform-go-demo/tree/main/test) - Automatically deploy the example above, see if the ELB returns "Hello, World!", and then destroy the deployed resources.
+
 ## ⚙️ Modules
 
 `main.tf` utilizes my two custom Terraform modules. These modules should be pinned to `v1.0.0`.
