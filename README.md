@@ -36,12 +36,20 @@ This project will deploy the following [AWS](https://aws.amazon.com/) resources.
 
 [Here](https://github.com/smithlabs/hello-world-terraform-go-demo/blob/main/main.tf#L12-L31) is where these modules are used in `main.tf`.
 
+## 🐾 Pre-requisites
+
+- You must have [Terraform](https://www.terraform.io/) installed on your computer.
+- You must have an [Amazon Web Services (AWS) account](http://aws.amazon.com/).
+- (Optional) - [AWS CLI v2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) is recommended if you want to deploy Terraform code using [multiple AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html).
+
+Please note that this code was written for Terraform 0.13.x.
+
 ## 🔬 Requirements
 
-| Name      | Version   | Install                                                                                   |
-| --------- | --------- | ----------------------------------------------------------------------------------------- |
-| terraform | >= 0.13.0 | [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)          |
-| aws       | >= 2.35   | [Install aws-cli v2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) |
+| Name      | Version   |
+| --------- | --------- |
+| terraform | >= 0.13.0 |
+| aws       | >= 2.35   |
 
 ## 🐇 Quickstart
 
