@@ -16,6 +16,6 @@ chmod +x main
 
 # ---------------------------------------------------------------------------------------------------------------------
 # Run the server
-# nohup catches the hangup signal and the ampersand runs the process in the background.
+# nohup catches the hangup signal and the ampersand runs the process in the background
 # ---------------------------------------------------------------------------------------------------------------------
 nohup ./main &
