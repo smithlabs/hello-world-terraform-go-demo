@@ -13,7 +13,8 @@ Credit: [Valentin Deleplace](https://github.com/Deleplace)
 ![Go](https://img.shields.io/badge/-Go-3E3E3E?style=flat-square&logo=Go)
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 
-This repo contains everything you need to deploy the [pre-compiled](https://github.com/smithlabs/go-example-servers#example-hello-world-http-server) "Hello, World!" [Go](https://golang.org/) binary as a load balanced web application to [AWS](https://aws.amazon.com/) using [Terraform](https://www.terraform.io/).
+This folder contains an example [Terraform](https://www.terraform.io/) configuration that deploys a simple Golang "[Hello, World](https://github.com/smithlabs/go-example-servers#example-hello-world-http-server)" application across a cluster of web servers (using [EC2](https://aws.amazon.com/ec2/) and
+[Auto Scaling](https://aws.amazon.com/autoscaling/) in an [Amazon Web Services (AWS) account](http://aws.amazon.com/).
 
 ## 🔭 Overview
 
@@ -21,7 +22,7 @@ This project will deploy the following [AWS](https://aws.amazon.com/) resources.
 
 - [Elastic Load Balancer](https://aws.amazon.com/elasticloadbalancing/) (Also known as the [Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/introduction.html))
 - [Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html)
-- 2 x [EC2 Instances](https://aws.amazon.com/ec2/) of [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/)
+- 2 x [EC2 instances](https://aws.amazon.com/ec2/) of [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/)
 - [Security Groups for the Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-security-groups.html)
 - [Security Groups for the EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html)
 
