@@ -6,7 +6,7 @@
 variable "name" {
   description = "The name of the ASG and all its resources"
   type        = string
-  default     = "hello-world"
+  default     = "hello-world-example"
 }
 
 variable "environment" {
