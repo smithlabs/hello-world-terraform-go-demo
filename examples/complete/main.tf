@@ -27,7 +27,7 @@ module "asg" {
   min_size           = 2
   max_size           = 2
   subnet_ids         = data.aws_subnet_ids.default.ids
-  load_balancers     = [module.elb.this_elb_name]
+  load_balancers     = [module.elb.elb_name]
 }
 
 resource "aws_security_group_rule" "allow_elb_http_inbound" {

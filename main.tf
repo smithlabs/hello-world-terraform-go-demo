@@ -1,3 +1,9 @@
+# ---------------------------------------------------------------------------------------------------------------------
+# VERSIONING
+# This project was written for Terraform 0.13x
+# See 'Upgrading to Terraform v0.13' https://www.terraform.io/upgrade-guides/0-13.html
+# ---------------------------------------------------------------------------------------------------------------------
+
 terraform {
   required_version = ">= 0.13"
 }
@@ -8,6 +14,11 @@ provider "aws" {
   # Allow any 2.x version of the AWS provider
   version = "~> 2.0"
 }
+
+# ---------------------------------------------------------------------------------------------------------------------
+# MODULES
+# These are my custom Terraform modules and they should be pinned to v1.0.0.0.
+# ---------------------------------------------------------------------------------------------------------------------
 
 module "elb" {
   source = "github.com/smithlabs/terraform-aws-elb?ref=v1.0.0"
@@ -27,8 +38,13 @@ module "asg" {
   min_size           = 2
   max_size           = 2
   subnet_ids         = data.aws_subnet_ids.default.ids
-  load_balancers     = [module.elb.this_elb_name]
+  load_balancers     = [module.elb.elb_name]
 }
+
+# ---------------------------------------------------------------------------------------------------------------------
+# ELB SECURITY GROUP RULES
+# Allow traffic from the outside world to reach the web application
+# ---------------------------------------------------------------------------------------------------------------------
 
 resource "aws_security_group_rule" "allow_elb_http_inbound" {
   type              = "ingress"
@@ -50,6 +66,12 @@ resource "aws_security_group_rule" "allow_elb_all_outbound" {
   cidr_blocks       = local.all_ips
 }
 
+# ---------------------------------------------------------------------------------------------------------------------
+# ASG SECURITY GROUP RULES
+# Allow the EC2 instance to bootstrap and be added to the ELB cluster
+# ---------------------------------------------------------------------------------------------------------------------
+
+# Allow traffic to the server port for the web application
 resource "aws_security_group_rule" "allow_server_http_inbound" {
   type              = "ingress"
   security_group_id = module.asg.instance_security_group_id
@@ -60,7 +82,7 @@ resource "aws_security_group_rule" "allow_server_http_inbound" {
   cidr_blocks       = local.all_ips
 }
 
-# Allow server to access internet to download files from GitHub in user-data.sh
+# Allow the EC2 instance to reach the Internet to perform the server setup in user-data.sh
 resource "aws_security_group_rule" "allow_server_all_outbound" {
   type		     = "egress"
   security_group_id  = module.asg.instance_security_group_id
@@ -70,6 +92,10 @@ resource "aws_security_group_rule" "allow_server_all_outbound" {
   protocol	     = local.any_protocol
   cidr_blocks	     = local.all_ips
 }
+
+# ---------------------------------------------------------------------------------------------------------------------
+# ADDITIONAL CONFIGURATION
+# ---------------------------------------------------------------------------------------------------------------------
 
 locals {
   http_port           = 80
