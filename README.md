@@ -95,16 +95,12 @@ terraform destroy
 
 **[⬆ back to top](#%EF%B8%8F-technologies)**
 
-## 🧪 Usage
-
-More instructions
-
 ## 📥Inputs
 
 | Name        | Description                                                              | Type     | Default       | Required |
 | ----------- | ------------------------------------------------------------------------ | -------- | ------------- | :------: |
-| name        | The name to prepend to the auto scaling group and ELB resources.         | `string` | `hello-world` |    no    |
 | environment | The environment name to add to the auto scaling group and ELB resources. | `string` | `test`        |    no    |
+| name        | The name to prepend to the auto scaling group and ELB resources.         | `string` | `hello-world` |    no    |
 | server_port | The port the server will use for HTTP requests.                          | `number` | `8080`        |    no    |
 
 ## 📤 Outputs
