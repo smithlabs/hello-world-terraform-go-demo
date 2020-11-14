@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # ------------------------------------------------------------------
 # [Sean Smith (smithlabs)] - Run a 'Hello, World! Go web server 
 #          Description
