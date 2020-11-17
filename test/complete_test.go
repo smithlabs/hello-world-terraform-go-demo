@@ -29,7 +29,7 @@ func TestHelloWorldAppExample(t *testing.T)  {
 	expectedStatus := 200
 	expectedBody := "Hello, world!"
 
-	maxRetries := 10
+	maxRetries := 50
 	timeBetweenRetries := 10 * time.Second
 
 	// Setup a TLS configuration to submit with the helper, a blank struct is acceptable
